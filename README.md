@@ -75,7 +75,7 @@ dashboard and the folder structure for building your custom blocks or filter the
 
 The other files are the standard theme files. Style.css is the compiled version of [src/style.scss](src/style.scss).
 
-## ::partying_face: How to use
+## :partying_face: How to use
 
 Style your theme in [src/css/base](src/css/base) and [theme.json](theme.json). Change font sizes, families, colors, paddings and so on. But the main purpous of this theme is building a compiling system to ease the process of creating you custom blocks. So, just add a new folder in [blocks/custom-blocks](blocks/custom-blocks), put inside your files, register them in [functions.php](functions.php) from [blocks/build-custom-blocks](blocks/build-custom-blocks) and go. They will be automatically compiled. 
 
