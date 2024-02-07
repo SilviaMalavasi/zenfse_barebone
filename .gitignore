@@ -1,0 +1,16 @@
+# .gitignore
+/node_modules
+/.DS_Store
+/.vscode
+/.parcel-cache
+.cache
+blocks/build-custom-blocks
+blocks/build-core-blocks
+blocks/build-core-styles
+/dist
+*.log
+*.css.map
+*.js.map
+.npmrc
+package-lock.json
+style.css
