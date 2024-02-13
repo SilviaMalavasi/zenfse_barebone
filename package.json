@@ -35,9 +35,5 @@
     "parcel": "^2.10.3",
     "rimraf": "^5.0.5",
     "concurrently": "^8.2.2"
-  },
-  "dependencies": {
-    "gsap": "npm:@gsap/shockingly@^3.12.2",
-    "swiper": "^11.0.4"
   }
 }
