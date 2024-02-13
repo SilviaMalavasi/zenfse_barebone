@@ -8,7 +8,9 @@ maximun control over final CSS and JS.
 
 This is the core, minimal version of ZenFSE and it's the best starting point if you want to develope from zero. I also
 built an enhanced version (that's the one I use when I start a new project) with some fancy animation and modified core
-blocks. You can check it out here: [Fancy ZenFSE](https://pages.github.com/).
+blocks. You can check it out here: [ZenFSE](https://github.com/SilviaMalavasi/zenfse_full/).
+
+SVG supprt is added in funcions.php. Both core/image and core/site-logo will output inline SVG.
 
 ## :rocket: Getting Started
 
@@ -29,7 +31,7 @@ dashboard and the folder structure for building your custom blocks or filter the
   under the `/* Custom blocks */` section. They will be compiled in `build-custom-blocks` folder. I left two custom
   blocks (the ones I always use) but you can delete `footer` if you don't need it. Custom block `navigation` is used in
   header template part [header.html](parts/header.html). If you wanto to remome it, please update
-  [header.html](parts/header.html) conequently.
+  [header.html](parts/header.html) consequently.
 
   - build-core-blocks: a folder with compiled core blocks filter.
   - build-core-blocks: a folder with compiled core blocks styles.
@@ -58,6 +60,7 @@ dashboard and the folder structure for building your custom blocks or filter the
 - dist: the build folder for dashboard style and global js.
 - parts: FSE parts. The custom "navigation" block is called in [header.html](header.html).
 - src: fonts, css and js of the theme.
+
   - assets: put your svg and images hese
     - fonts: here are fonts imported in theme
   - css: scss files compiled by parcel in [dist/site.css](dist/site.css)
@@ -70,14 +73,21 @@ dashboard and the folder structure for building your custom blocks or filter the
     - template: scss for FSE templates. style.scss is the starting point for compilig scss
   - js: js files compiled by parcel in [dist/site.js](dist/site.js)
     - base: some const like media queries to import in blocks.
-    - components: add here your custom components js. site.js is the starting point for compilig js
+    - components: add here your custom components js.
+
+  site.js is the starting point for compilig js
+
 - templates: the FSE templates. I added a Legal template for privacy policy stuff, if you want a plain page.
 
 The other files are the standard theme files. Style.css is the compiled version of [src/style.scss](src/style.scss).
 
 ## :partying_face: How to use
 
-Style your theme in [src/css/base](src/css/base) and [theme.json](theme.json). Change font sizes, families, colors, paddings and so on. But the main purpous of this theme is building a compiling system to ease the process of creating you custom blocks. So, just add a new folder in [blocks/custom-blocks](blocks/custom-blocks), put inside your files, register them in [functions.php](functions.php) from [blocks/build-custom-blocks](blocks/build-custom-blocks) and go. They will be automatically compiled. 
+Style your theme in [src/css/base](src/css/base) and [theme.json](theme.json). Change font sizes, families, colors,
+paddings and so on. The main purpous of this theme is building a compiling system to ease the process of creating you
+custom blocks. So, just add a new folder in [blocks/custom-blocks](blocks/custom-blocks), put inside your files,
+register them in [functions.php](functions.php) from [blocks/build-custom-blocks](blocks/build-custom-blocks) and go.
+They will be automatically compiled.
 
 Happy coding.
 
