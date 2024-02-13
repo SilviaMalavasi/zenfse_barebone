@@ -1,4 +1,4 @@
-body:has(.zenfse_barbone-main) {
+body:where(:has(.zenfse_barbone-main)) {
   position: relative;
   width: 100%;
   margin: 0;
