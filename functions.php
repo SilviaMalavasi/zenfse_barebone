@@ -19,18 +19,25 @@ if (!function_exists('zenfse_barbone_setup')) {
     // Add support for the following post formats: aside, gallery, quote, image, and video
 
     add_theme_support('post-formats', array('aside', 'gallery', 'quote', 'image', 'video'));
-
-    // Enqueue style
-
-    wp_enqueue_style('zenfse_barbone-style', get_stylesheet_directory_uri() . '/style.css', array(), filemtime(get_stylesheet_directory() . '/style.css'), false);
-
-    // Enqueue script
-
-    wp_enqueue_script('zenfse_barbone-script', get_stylesheet_directory_uri() . '/dist/site.js', array(), filemtime(get_stylesheet_directory() . '/dist/site.js'), true);
   }
 }
 add_action('after_setup_theme', 'zenfse_barbone_setup');
 
+// Enqueue scripts
+
+function zenfse_barbone_enqueue_script()
+{
+  wp_enqueue_script('zenfse_barbone-script', get_stylesheet_directory_uri() . '/dist/site.js', array(), filemtime(get_stylesheet_directory() . '/dist/site.js'), true);
+}
+add_action('wp_enqueue_scripts', 'zenfse_barbone_enqueue_script');
+
+// Enqueue styles
+
+function zenfse_barbone_enqueue_style()
+{
+  wp_enqueue_style('zenfse_barbone-style', get_stylesheet_directory_uri() . '/style.css', array(), filemtime(get_stylesheet_directory() . '/style.css'), false);
+}
+add_action('wp_enqueue_scripts', 'zenfse_barbone_enqueue_style');
 
 // Dashboard style
 
