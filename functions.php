@@ -171,7 +171,7 @@ function zenfse_barbone_register_blocks()
   {
     array_unshift($categories, array(
       'slug'  => 'zenfse_barbone-blocks',
-      'title' => 'Zen FSE Blocks'
+      'title' => 'ZenFSE Blocks'
     ));
     return $categories;
   };
