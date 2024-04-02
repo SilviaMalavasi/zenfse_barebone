@@ -1,7 +1,7 @@
 {
   "apiVersion": 2,
   "name": "custom-blocks/navigation",
-  "title": "ZenFSE Navigation",
+  "title": "ZenFSE Barebone Navigation",
   "version": "1.0.0",
   "category": "zenfse_barbone-blocks",
   "icon": "menu",

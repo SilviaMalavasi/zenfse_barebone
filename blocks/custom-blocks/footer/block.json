@@ -1,7 +1,7 @@
 {
   "apiVersion": 2,
   "name": "blocks/footer",
-  "title": "Footer",
+  "title": "ZenFSE Barebone Footer",
   "version": "1.0.0",
   "category": "zenfse_barbone-blocks",
   "icon": "layout",
