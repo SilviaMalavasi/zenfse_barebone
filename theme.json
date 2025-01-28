@@ -24,7 +24,7 @@
       }
     },
     "spacing": {
-      "blockGap": true,
+      "blockGap": null,
       "customSpacingSize": true,
       "margin": true,
       "padding": true,
